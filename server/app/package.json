@@ -1,0 +1,32 @@
+{
+  "name": "dispeakable.me",
+  "author": {
+    "name": "KimY"
+  },
+  "version": "0.0.1",
+  "private" : true,
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yungookim/dispeakable.me.git"
+  },
+  "engines": {
+    "node": ">= 0.8.9",
+    "npm": ">= 1.1.x"
+  },
+  "dependencies": {
+    "express": "3.x",
+    "nconf" : "0.6.x",
+    "underscore" : "1.4.x",
+    "supertest" : "0.7.x",
+    "winston" : "0.7.x",
+    "node-uuid" : "1.x",
+    "async" : "0.2.x",
+    "rsa-json" : "0.1.x",
+    "node-uuid" : "1.4.x",
+    "dbox" : "0.6.x"
+  },
+  "devDependencies": {
+  },
+  "scripts":{
+  }
+}
