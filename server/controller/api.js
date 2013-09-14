@@ -8,8 +8,9 @@ module.exports = function(settings, nconf, libs) {
   positions = {};
   app.post('/action', function(req, res) {
     var uid;
-    console.log(req.body.type);
-    console.log(req.body.velocity);
+    // console.log(req.body.type);
+    // console.log(req.body.velocity);
+
     if (state.length < 1) {
       state.push({
         type: req.body.type,
@@ -19,47 +20,14 @@ module.exports = function(settings, nconf, libs) {
     uid = uuid.v4().replace(/-/gm, "");
     return res.send(uid);
   });
-  app.post('/init', function(req, res) {
-    state = [];
-    return positions = {};
-  });
-  app.get('/action', function(req, res) {
-    return res.send(state.pop());
-  });
-  app.get('/data', function(req, res) {
-    console.log('positions');
-    console.log(positions);
-    console.log('state');
-    console.log(state);
-    return res.send(positions);
-  });
-  app.post('/config/:id', function(req, res) {
-    var id;
-    id = req.params.id;
-    positions[id] = {};
-    positions[id].screen = {
-      width: req.body.width,
-      height: req.body.height
-    };
-    res.send(positions);
-    return console.log(positions);
-  });
-  app.post('/position/:id', function(req, res) {
-    var id;
-    id = req.params.id;
 
-    console.log(req.body);
+  app.get('/action', function(req, res){
+    if(state.length > 0){
+      res.send('ok');
+      state.pop();
+    }
 
-    positions[id].position = {
-      top: req.body.top,
-      left: req.body.left,
-      statue: req.body.statue
-    };
-    console.log(positions);
-    return res.send(positions);
   });
-  app.get('/positions', function(req, res) {
-    return res.send(positions);
-  });
+  
   return this;
 };
