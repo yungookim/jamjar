@@ -25,27 +25,39 @@ body{
 .html0.t2{
   background-color: white;
 }
-.html0.t2 #drop, .html0.t5 #drop{
+.html0.t2 #drop{
   top: 50%;
   right: 50%;
 }
 .html0.t3 #drop{
   display:block;
 }
-.html0.t4 #drop, .html0.t6 #drop{
+.html0.t4 #drop{
+  right:-50%;
+}
+.html0.t5 #drop{
+  right: 50%;
+}
+.html0.t6 #drop{
   right:-50%;
 }
 .html1.t1{
   background-color: white;
 }
-.html1.t2 #drop, .html1.t5 #drop{
+.html1.t2 #drop{
   top: 50%;
   left: -50%;
 }
 .html1.t3 #drop{
   display:block;
 }
-.html1.t4 #drop, .html1.t6 #drop{
+.html1.t4 #drop{
+  left: 50%;
+}
+.html1.t5 #drop{
+  left: -50%;
+}
+.html1.t6 #drop{
   left: 50%;
 }
 .html2.t2{
