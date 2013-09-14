@@ -11,10 +11,13 @@ $(document).ready(function () {
     // console.log(snapshot.val());
     window.state = snapshot.val();
 
+    window.playing = false;
+
     window.soundInt = setInterval(function(){
 
-      if ($('body').hasClass('t8')){
+      if ($('body').hasClass('t7') && !window.playing){
         window.Sound.play();
+        window.playing = true;
       }
 
       if (window.id === 0){
