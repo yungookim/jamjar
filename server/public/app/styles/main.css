@@ -41,6 +41,13 @@ body{
 .html0.t6 #drop{
   right:-50%;
 }
+.html1.t7 #drop{
+width: 5000px;
+margin-left: -2500px;
+height: 5000px;
+margin-top: -2500px;
+border-radius: 2500px;
+}
 .html1.t1{
   background-color: white;
 }
@@ -60,6 +67,25 @@ body{
 .html1.t6 #drop{
   left: 50%;
 }
+.html1.t7 #drop{
+width: 5000px;
+margin-left: -2500px;
+height: 5000px;
+margin-top: -2500px;
+border-radius: 2500px;
+}
 .html2.t2{
   background-color: white;
+}
+.html2.t6 #drop{
+  top: 50%;
+  left: -50%;
+  display: block;
+}
+.html2.t7 #drop{
+width: 5000px;
+margin-left: -2500px;
+height: 5000px;
+margin-top: -2500px;
+border-radius: 2500px;
 }
