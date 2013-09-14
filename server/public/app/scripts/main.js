@@ -26,7 +26,7 @@ $(document).ready(function () {
         } else {
           window.Sound.setVolume(0);
         }
-      } else if (window.id === 3) {
+      } else if (window.id === 2) {
         // t11
         if ($('body').hasClass('t11')){
           window.Sound.setVolume(100);
