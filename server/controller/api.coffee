@@ -35,6 +35,8 @@ module.exports = (settings, nconf, libs) ->
     # Defaults : req.body -> { deviceId : .., width: .., height:..} 
     # configs 
     id = req.params.id
+
+    positions[id] = {};
     positions[id].screen = {
       width : req.body.width,
       height : req.body.height

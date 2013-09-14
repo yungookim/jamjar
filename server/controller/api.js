@@ -36,6 +36,7 @@ module.exports = function(settings, nconf, libs) {
   app.post('/config/:id', function(req, res) {
     var id;
     id = req.params.id;
+    positions[id] = {};
     positions[id].screen = {
       width: req.body.width,
       height: req.body.height
@@ -46,11 +47,15 @@ module.exports = function(settings, nconf, libs) {
   app.post('/position/:id', function(req, res) {
     var id;
     id = req.params.id;
-    positions[id].positions = {
+
+    console.log(req.body);
+
+    positions[id].position = {
       top: req.body.top,
       left: req.body.left,
       statue: req.body.statue
     };
+    console.log(positions);
     return res.send(positions);
   });
   app.get('/positions', function(req, res) {
