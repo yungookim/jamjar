@@ -20,7 +20,7 @@ var libs = {
 var settings      = new require('./settings/settings')(nconf, libs);
 var controller    = new require('./controller/api')(settings, nconf, libs);
 
-app.use(express.static(__dirname + '/public/dist/'));
+app.use(express.static(__dirname + '/public/app/'));
 
 // Start listening after everything is loaded
 app.listen(nconf.get("port"));
