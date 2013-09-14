@@ -79,7 +79,7 @@ body{
 .html0.t9 #season{
   opacity: 1;
 }
-.html0.t9 #season{
+.html0.t10 #season{
   opacity: 0.5;
 }
 .html1.t1{
@@ -140,10 +140,13 @@ body{
 .html2.t10 #season{
   opacity: 1;
 }
+.html2.t11 #season{
+  opacity: 0.5;
+}
 .html0.t8 #drop, .html1.t8 #drop, .html2.t8 #drop{
   display: none;
 }
-.t11 #season{
+.html2.t11 #season{
   opacity: 1;
 }
 
