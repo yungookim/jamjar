@@ -307,7 +307,7 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask('build', [
-        'clean:dist',
+        // 'clean:dist',
         'coffee',
         'createDefaultTemplate',
         'jst',
@@ -316,16 +316,16 @@ module.exports = function (grunt) {
         'imagemin',
         'htmlmin',
         'concat',
-        'cssmin',
-        'uglify',
+        // 'cssmin',
+        // 'uglify',
         'copy',
         'rev',
         'usemin'
     ]);
 
     grunt.registerTask('default', [
-        'jshint',
-        'test',
+        // 'jshint',
+        // 'test',
         'build'
     ]);
 };
