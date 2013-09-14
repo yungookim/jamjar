@@ -14,21 +14,21 @@ $(document).ready(function () {
 
       if (window.id === 0){
       // t9
-        if ($('body').hasClass('t9')){
+        if ($('body').hasClass('t9') && !$('body').hasClass('t10')){
           window.Sound.setVolume(100);
         } else {
           window.Sound.setVolume(0);
         }
       } else if (window.id === 1) {
       // t10
-        if ($('body').hasClass('t10')){
+        if ($('body').hasClass('t10') && !$('body').hasClass('t11')){
           window.Sound.setVolume(100);
         } else {
           window.Sound.setVolume(0);
         }
       } else if (window.id === 3) {
         // t11
-        if ($('body').hasClass('t11')){
+        if ($('body').hasClass('t11') && !$('body').hasClass('t12')){
           window.Sound.setVolume(100);
         } else {
           window.Sound.setVolume(0);
