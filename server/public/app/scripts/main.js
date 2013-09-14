@@ -36,9 +36,7 @@ $(document).ready(function () {
         }
       }
 
-      if ($('body').hasClass('t12') || !$('body').hasClass('t9') ||
-        !$('body').hasClass('t10') || $('body').hasClass('t11')
-        ){
+      if ($('body').hasClass('t12')){
         window.Sound.setVolume(0);
         window.Sound.stop();
         window.clearInterval(window.soundInt);
