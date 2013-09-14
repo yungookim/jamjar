@@ -140,7 +140,7 @@ body{
 .html2.t10 #season{
   opacity: 1;
 }
-.t8 #drop{
+.html0.t8 #drop, .html1.t8 #drop, .html2.t8 #drop{
   display: none;
 }
 .t11 #season{
