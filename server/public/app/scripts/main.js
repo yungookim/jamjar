@@ -2,7 +2,7 @@ $(document).ready(function () {
   // 'use strict';
 
   window.myDataRef = new Firebase('https://hackathon234.firebaseio.com/');
-  window.myDataRef.set(-1);
+  // window.myDataRef.set(-1);
 
 
   window.state = -1;
