@@ -2,6 +2,8 @@ $(document).ready(function () {
   // 'use strict';
 
   window.myDataRef = new Firebase('https://hackathon234.firebaseio.com/');
+  window.myDataRef.set(-1);
+
 
   window.state = -1;
   //myDataRef.set(0);
@@ -35,7 +37,9 @@ $(document).ready(function () {
         }
       }
 
-      if ($('body').hasClass('t12')){
+      if ($('body').hasClass('t12') || !$('body').hasClass('t9') ||
+        !$('body').hasClass('t10') || $('body').hasClass('t11')
+        ){
         window.Sound.setVolume(0);
         window.Sound.stop();
         window.clearInterval(window.soundInt);
