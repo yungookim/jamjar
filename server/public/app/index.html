@@ -38,10 +38,15 @@
         <script src="http://connect.soundcloud.com/sdk.js"></script>
         <script>
         SC.initialize({
-          client_id: 'YOUR_CLIENT_ID'
+          client_id: 'd7b9d50c2fa18127a63ba909f5f97119'
         });
 
-
+        // var track_url = 'https://soundcloud.com/robotaki/tron-legacy-daft-punk-derezzed';
+        
+        // stream track id 293
+        SC.stream("/tracks/14378020", function(sound){
+          sound.play();
+        });
         </script>
 </body>
 </html>
