@@ -44,8 +44,6 @@ $(document).ready(function () {
 
   
 
-  
-
 });
 
 
