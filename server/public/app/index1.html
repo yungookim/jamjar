@@ -34,6 +34,18 @@
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
         
+        <script src="http://connect.soundcloud.com/sdk.js"></script>
+        <script>
+        SC.initialize({
+          client_id: 'd7b9d50c2fa18127a63ba909f5f97119'
+        });
+
+        SC.stream("/tracks/293", function(sound){
+          window.Sound = sound;
+          sound.setVolume(0);
+          sound.play();
+        });
+        </script>
 
 
 </body>
