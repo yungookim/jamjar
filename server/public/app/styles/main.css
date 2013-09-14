@@ -75,6 +75,12 @@ body{
 .html0.t8 #season{
   top: 0;
 }
+.html0.t9 #season{
+  opacity: 1;
+}
+.html0.t9 #season{
+  opacity: 0.5;
+}
 .html1.t1{
   background-color: white;
 }
@@ -129,4 +135,13 @@ body{
 }
 .html2.t8 #season{
   top: 0;
+}
+.html2.t10 #season{
+  opacity: 1;
+}
+.t8 #drop{
+  display: none;
+}
+.t11 #season{
+  opacity: 1;
 }
