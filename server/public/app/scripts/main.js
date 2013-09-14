@@ -37,6 +37,7 @@ $(document).ready(function () {
 
       if ($('body').hasClass('t12')){
         window.Sound.setVolume(0);
+        window.Sound.stop();
         window.clearInterval(window.soundInt);
       }
 
