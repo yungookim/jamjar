@@ -8,6 +8,10 @@ body{
   display:none;
   width: 100px;
   height: 100px;
+  margin-left: -50px;
+  margin-top: -50px;
   position: absolute;
   background-color:red;
+  border-radius: 50px;
+  transition: 2s linear;
 }

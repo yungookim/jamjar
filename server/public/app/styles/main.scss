@@ -1,38 +1,41 @@
 @import "base";
-
-.t0{
+.html{
+&.t0{
   background-color: white;
 }
-.t1{
+&.t1{
   background-color: black;
 }
-.t2{
+&.t2{
   background-color: white;
-}
-.t3{
   #drop{
     top: 50%;
-    left: 50%;
-    margin-left: -50px;
-    margin-right: -50px;
+    right: 50%;
+  }
+}
+&.t3{
+  #drop{
     display:block;
   }
 }
-.t4{
+&.t4{
+  #drop{
+    right:-50px;
+  }
+}
+&.t5{
 
 }
-.t5{
+&.t6{
 
 }
-.t6{
+&.t7{
 
 }
-.t7{
+&.t8{
 
 }
-.t8{
+&.t9{
 
 }
-.t9{
-
 }
