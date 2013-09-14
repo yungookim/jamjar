@@ -20,11 +20,21 @@
 }
 &.t4{
   #drop{
-    left: 50%
+    left: 50%;
+    &:before, &:after{
+      content: "";
+      width: 0;
+      height: 0;
+    }
   }
 }
 &.t5{
-
+  #drop{
+    width: 100%;
+    margin-left: 50%;
+    &:before{}
+    &:after{}
+  }
 }
 &.t6{
 
