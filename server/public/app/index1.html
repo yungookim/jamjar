@@ -9,8 +9,23 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
+        <script src="http://js.pusher.com/2.1/pusher.min.js"></script>
+        <script type="text/javascript">
+            // Enable pusher logging - don't include this in production
+            Pusher.log = function(message) {
+              if (window.console && window.console.log) {
+                window.console.log(message);
+              }
+            };
+
+            var pusher = new Pusher('a4f34ed0342f042ed627');
+            var channel = pusher.subscribe('test_channel');
+            pusher.trigger('my_event', {
+              "message": "hello world"
+            });
+        </script>
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="stylesheet" href="styles/main1.scss">
+        <link rel="stylesheet" href="styles/main.css">
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
@@ -31,9 +46,11 @@
         <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/main.js -->
+        <script src="scripts/main.js"></script>
         <script src="scripts/main1.js"></script>
+        <script src="scripts/main2.js"></script>
         <!-- endbuild -->
-
+        
 
 
 </body>
