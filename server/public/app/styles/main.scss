@@ -1,35 +1,38 @@
-body{
+@import "base";
+
+.t0{
+  background-color: white;
+}
+.t1{
   background-color: black;
 }
-#t0{
-  body{
-    background-color: black;
+.t2{
+  background-color: white;
+}
+.t3{
+  #main{
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-right: -50px;
+    display:block;
   }
 }
-#t1{
+.t4{
 
 }
-#t2{
+.t5{
 
 }
-#t3{
+.t6{
 
 }
-#t4{
+.t7{
 
 }
-#t5{
+.t8{
 
 }
-#t6{
-
-}
-#t7{
-
-}
-#t8{
-
-}
-#t9{
+.t9{
 
 }
