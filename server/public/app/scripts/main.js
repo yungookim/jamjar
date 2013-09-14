@@ -2,7 +2,7 @@ $(document).ready(function () {
   // 'use strict';
 
   window.myDataRef = new Firebase('https://hackathon234.firebaseio.com/');
-  // window.myDataRef.set(-1);
+  window.myDataRef.set(-1);
 
 
   window.state = -1;
@@ -10,7 +10,6 @@ $(document).ready(function () {
   window.myDataRef.on('value', function(snapshot) {
     // console.log(snapshot.val());
     window.state = snapshot.val();
-
 
     window.soundInt = setInterval(function(){
 

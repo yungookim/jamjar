@@ -4,29 +4,24 @@ module.exports = function(settings, nconf, libs) {
   var app, positions, state, uuid;
   app = libs.app;
   uuid = require('node-uuid');
-  state = [];
+  state = -1;
   positions = {};
   app.post('/action', function(req, res) {
     var uid;
     console.log('/action');
     // console.log(req.body.velocity);
 
-    if (state.length < 1) {
-      state.push({
-        type: 'in'
-      });
-    }
+    var Firebase = require('firebase');
+    var myRootRef = new Firebase('https://hackathon234.firebaseio.com/');
+    myRootRef.set(state);
+
+    state++;
+    
+    console.log(state);
+
     uid = uuid.v4().replace(/-/gm, "");
     return res.send(uid);
   });
 
-  app.get('/action', function(req, res){
-    if(state.length > 0){
-      state.pop();
-      res.send('ok');
-    }
-
-  });
-  
   return this;
 };
