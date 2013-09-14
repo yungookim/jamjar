@@ -28,7 +28,7 @@ $(document).ready(function () {
         }
       } else if (window.id === 3) {
         // t11
-        if ($('body').hasClass('t11') && !$('body').hasClass('t12')){
+        if ($('body').hasClass('t11')){
           window.Sound.setVolume(100);
         } else {
           window.Sound.setVolume(0);
