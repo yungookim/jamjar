@@ -13,6 +13,10 @@ $(document).ready(function () {
 
     window.soundInt = setInterval(function(){
 
+      if ($('body').hasClass('t8')){
+        window.Sound.play();
+      }
+
       if (window.id === 0){
       // t9
         if ($('body').hasClass('t9') && !$('body').hasClass('t10')){
