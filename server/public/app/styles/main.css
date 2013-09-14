@@ -4,6 +4,7 @@ body{
   height: 100%;
   background-color: black;
   margin: 0;
+  font-family: helvetica;
 }
 
 #drop{
@@ -144,4 +145,8 @@ body{
 }
 .t11 #season{
   opacity: 1;
+}
+
+.t12 #season{
+  opacity: 0;
 }
