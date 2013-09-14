@@ -1,4 +1,23 @@
-@import "base";
+html, body{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+body{
+  background-color: black;
+}
+#drop{
+  display:none;
+  width: 100px;
+  height: 100px;
+  margin-left: -50px;
+  margin-top: -50px;
+  position: absolute;
+  background-color:red;
+  border-radius: 50px;
+  transition: 2s linear;
+}
+
 .html0{
 &.t0{
   background-color: white;
