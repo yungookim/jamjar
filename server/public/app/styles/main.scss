@@ -1,124 +1,117 @@
-@import "base";
-.html0{
-&.t0{
-  background-color: white;
-}
-&.t1{
+body{
+  position: fixed;
+  width: 100%;
+  height: 100%;
   background-color: black;
 }
-&.t2{
-  background-color: white;
-  #drop{
-    top: 50%;
-    right: 50%;
-  }
-}
-&.t3{
-  #drop{
-    display:block;
-  }
-}
-&.t4{
-  #drop{
-    right:-50%;
-  }
-}
-&.t5{
 
-}
-&.t6{
-
-}
-&.t7{
-
-}
-&.t8{
-
-}
-&.t9{
-
-}
+#drop{
+  display:none;
+  width: 100px;
+  height: 100px;
+  margin-left: -50px;
+  margin-top: -50px;
+  position: absolute;
+  background-color:red;
+  border-radius: 50px;
+  transition: 2s linear;
 }
 
-.html1{
-&.t0{
-
-}
-&.t1{
+.html0 .t0{
   background-color: white;
 }
-&.t2{
-  #drop{
-    top: 50%;
-    left: -50%;
-  }
+.html0 .t1{
+  background-color: black;
 }
-&.t3{
-  #drop{
-    display:block;
-  }
-}
-&.t4{
-  #drop{
-    left: 50%;
-    &:before, &:after{
-      content: "";
-      width: 0;
-      height: 0;
-    }
-  }
-}
-&.t5{
-  #drop{
-    width: 100%;
-    margin-left: 50%;
-    &:before{}
-    &:after{}
-  }
-}
-&.t6{
-
-}
-&.t7{
-
-}
-&.t8{
-
-}
-&.t9{
-
-}
-}
-
-.html2{
-&.t0{
-
-}
-&.t1{
-
-}
-&.t2{
+.html0 .t2{
   background-color: white;
 }
-&.t3{
+.html0 .t2 #drop{
+  top: 50%;
+  right: 50%;
+}
+.html0 .t3 #drop{
+  display:block;
+}
+.html0 .t4 #drop{
+  right:-50%;
+}
+.html0 .t5{
 
 }
-&.t4{
+.html0 .t6{
 
 }
-&.t5{
+.html0 .t7{
 
 }
-&.t6{
+.html0 .t8{
 
 }
-&.t7{
+.html0 .t9{
 
 }
-&.t8{
+
+
+.html1 .t0{
 
 }
-&.t9{
+.html1 .t1{
+  background-color: white;
+}
+.html1 .t2 #drop{
+  top: 50%;
+  left: -50%;
+}
+.html1 .t3 #drop{
+  display:block;
+}
+.html1 .t4 #drop{
+  left: 50%;
+}
+.html1 .t5{
 
 }
+.html1 .t6{
+
+}
+.html1 .t7{
+
+}
+.html1 .t8{
+
+}
+.html1 .t9{
+
+}
+
+.html2 .t0{
+
+}
+.html2 .t1{
+
+}
+.html2 .t2{
+  background-color: white;
+}
+.html2 .t3{
+
+}
+.html2 .t4{
+
+}
+.html2 .t5{
+
+}
+.html2 .t6{
+
+}
+.html2 .t7{
+
+}
+.html2 .t8{
+
+}
+.html2 .t9{
+
 }
