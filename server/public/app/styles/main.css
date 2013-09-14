@@ -115,6 +115,12 @@ body{
 .html1.t8 #season{
   top: 0;
 }
+.html1.t10 #season{
+  opacity: 1;
+}
+.html1.t11 #season{
+  opacity: 0.5;
+}
 .html2.t2{
   background-color: white;
 }
@@ -137,19 +143,12 @@ body{
 .html2.t8 #season{
   top: 0;
 }
-.html2.t10 #season{
-  opacity: 1;
-}
 .html2.t11 #season{
-  opacity: 0.5;
+  opacity: 1;
 }
 .html0.t8 #drop, .html1.t8 #drop, .html2.t8 #drop{
   display: none;
 }
-.html2.t11 #season{
-  opacity: 1;
-}
-
-.t12 #season{
+.html0.t12 #season, .html1.t12 #season, .html2.t12 #season{
   opacity: 0;
 }
