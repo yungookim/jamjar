@@ -16,101 +16,38 @@ body{
   border-radius: 50px;
   transition: 2s linear;
 }
-.html0 .t0{
+.html0.t0{
   background-color: white;
 }
-.html0 .t1{
+.html0.t1{
   background-color: black;
 }
-.html0 .t2{
+.html0.t2{
   background-color: white;
 }
-.html0 .t2 #drop{
+.html0.t2 #drop{
   top: 50%;
   right: 50%;
 }
-.html0 .t3 #drop{
+.html0.t3 #drop{
   display:block;
 }
-.html0 .t4 #drop{
+.html0.t4 #drop{
   right:-50%;
 }
-.html0 .t5{
-
-}
-.html0 .t6{
-
-}
-.html0 .t7{
-
-}
-.html0 .t8{
-
-}
-.html0 .t9{
-
-}
-
-
-.html1 .t0{
-
-}
-.html1 .t1{
+.html1.t1{
   background-color: white;
 }
-.html1 .t2 #drop{
+.html1.t2 #drop{
   top: 50%;
   left: -50%;
 }
-.html1 .t3 #drop{
+.html1.t3 #drop{
   display:block;
 }
-.html1 .t4 #drop{
+.html1.t4 #drop{
   left: 50%;
 }
-.html1 .t5{
-
-}
-.html1 .t6{
-
-}
-.html1 .t7{
-
-}
-.html1 .t8{
-
-}
-.html1 .t9{
-
-}
-
-.html2 .t0{
-
-}
-.html2 .t1{
-
-}
-.html2 .t2{
+.html2.t2{
   background-color: white;
-}
-.html2 .t3{
-
-}
-.html2 .t4{
-
-}
-.html2 .t5{
-
-}
-.html2 .t6{
-
-}
-.html2 .t7{
-
-}
-.html2 .t8{
-
-}
-.html2 .t9{
-
 }
