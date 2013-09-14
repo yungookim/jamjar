@@ -47,21 +47,6 @@
           sound.play();
         });
 
-        window.i = -1;
-        // Myo Control
-        window.myoControl = setInterval(function(){
-          
-          $.get('/action', function(ret){
-            console.log(ret);
-            if (ret == 'ok'){
-              myDataRef.set((window.i)++);
-            }
-          });
-
-        }, 1000);
-
-
-
         </script>
 </body>
 </html>
