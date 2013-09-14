@@ -52,6 +52,7 @@
         window.myoControl = setInterval(function(){
           
           $.get('/action', function(ret){
+            console.log(ret);
             if (ret == 'ok'){
               myDataRef.set((window.i)++);
             }

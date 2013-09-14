@@ -8,13 +8,12 @@ module.exports = function(settings, nconf, libs) {
   positions = {};
   app.post('/action', function(req, res) {
     var uid;
-    // console.log(req.body.type);
+    console.log('/action');
     // console.log(req.body.velocity);
 
     if (state.length < 1) {
       state.push({
-        type: req.body.type,
-        velocity: req.body.velocity
+        type: 'in'
       });
     }
     uid = uuid.v4().replace(/-/gm, "");
@@ -23,8 +22,8 @@ module.exports = function(settings, nconf, libs) {
 
   app.get('/action', function(req, res){
     if(state.length > 0){
-      res.send('ok');
       state.pop();
+      res.send('ok');
     }
 
   });
