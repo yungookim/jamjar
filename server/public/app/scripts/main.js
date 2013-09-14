@@ -6,12 +6,13 @@ $(document).ready(function () {
 
 
   window.state = -1;
-  //myDataRef.set(0);
+  window.playing = false;
+  
   window.myDataRef.on('value', function(snapshot) {
     // console.log(snapshot.val());
     window.state = snapshot.val();
 
-    window.playing = false;
+    
 
     window.soundInt = setInterval(function(){
 
